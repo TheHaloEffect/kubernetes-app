@@ -23,10 +23,6 @@ spec:
             - mountPath: /var/lib/postgres/data
               subPath: postgres
               name: postgres-storage
-          resources:
-            limits:
-              memory: "128Mi"
-              cpu: "500m"
           ports:
             - containerPort: 5432
           env:
